@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,4 +11,46 @@
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#26ade0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tviewpara"
+            android:textColor="#000000"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="@string/tviewpara"/>
+
+        <ImageView
+            android:id="@+id/img_8ball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ball1"
+            android:layout_marginTop="37dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/askBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:text="@string/ask"
+            android:textColor="#FFFFFF"
+            tools:text="@string/ask"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/img_8ball"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
 </RelativeLayout>
